@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  redis:
+    host: localhost    # Redis 服务器地址
+    port: 6379         # Redis 服务器端口号
+    password:          # Redis 访问密码
+    database: 0        # Redis 数据库编号
+    timeout: 10000
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jhh?useSSL=false&serverTimezone=UTC&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
